@@ -1,0 +1,3 @@
+Maxitaxi,2.0,0.6
+Friendshare,10,0
+Waldo takso,1.0,1.0
