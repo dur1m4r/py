@@ -3,6 +3,7 @@ import telebot
 bot = telebot.TeleBot('478286981:AAEz_yMsGgQnlXx8OlH0mQe53iB1-YMFbf8')
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
 keyboard1.row('Next game', 'League position')
+keyboard1.row('Next game', 'League position')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -10,9 +11,9 @@ def start_message(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    if message.text.lower() == 'Next game':
+    if message.text.lower() == 'next game':
         bot.send_message(message.chat.id, 'Привет, мой создатель')
-    elif message.text.lower() == 'League position':
+    elif message.text.lower() == 'league position':
         bot.send_message(message.chat.id, 'Прощай, создатель')
     elif message.text.lower() == 'я тебя люблю':
         bot.send_sticker(message.chat.id, 'CAADAgADZgkAAnlc4gmfCor5YbYYRAI')
