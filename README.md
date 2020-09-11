@@ -1,2 +1,3 @@
 # py
-python practice
+python3 practice
+pieces of code and some hometasks
